@@ -1,0 +1,19 @@
+{
+  "name": "@web-agent/adapter-spare-room",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@web-agent/core": "workspace:*",
+    "playwright": "^1.41.0",
+    "pino": "^8.17.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
