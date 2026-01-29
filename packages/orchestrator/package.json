@@ -1,0 +1,21 @@
+{
+  "name": "@web-agent/orchestrator",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@web-agent/core": "workspace:*",
+    "better-sqlite3": "^11.7.0",
+    "pino": "^8.17.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "web-agent",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "web-agent": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "@web-agent/core": "workspace:*",
+    "@web-agent/orchestrator": "workspace:*",
+    "@web-agent/adapter-spare-room": "workspace:*",
+    "commander": "^11.1.0",
+    "playwright": "^1.41.0",
+    "better-sqlite3": "^11.7.0",
+    "pino": "^8.17.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "typescript": "^5.3.3"
+  }
+}
