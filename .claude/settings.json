@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "PostToolUse": {
+      "Write": "$CLAUDE_PROJECT_DIR/.claude/hooks/format.sh",
+      "Edit": "$CLAUDE_PROJECT_DIR/.claude/hooks/format.sh"
+    },
+    "UserPromptSubmit": "$CLAUDE_PROJECT_DIR/.claude/hooks/check-secrets.sh"
+  }
+}
