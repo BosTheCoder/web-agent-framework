@@ -30,6 +30,53 @@ importers:
         specifier: ^1.2.0
         version: 1.6.1(@types/node@20.19.30)
 
+  apps/cli:
+    dependencies:
+      '@web-agent/adapter-spare-room':
+        specifier: workspace:*
+        version: link:../../packages/adapters/spare-room
+      '@web-agent/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@web-agent/orchestrator':
+        specifier: workspace:*
+        version: link:../../packages/orchestrator
+      better-sqlite3:
+        specifier: ^11.7.0
+        version: 11.10.0
+      commander:
+        specifier: ^11.1.0
+        version: 11.1.0
+      pino:
+        specifier: ^8.17.2
+        version: 8.21.0
+      playwright:
+        specifier: ^1.41.0
+        version: 1.58.0
+    devDependencies:
+      '@types/better-sqlite3':
+        specifier: ^7.6.8
+        version: 7.6.13
+      typescript:
+        specifier: ^5.3.3
+        version: 5.9.3
+
+  packages/adapters/spare-room:
+    dependencies:
+      '@web-agent/core':
+        specifier: workspace:*
+        version: link:../../core
+      pino:
+        specifier: ^8.17.2
+        version: 8.21.0
+      playwright:
+        specifier: ^1.41.0
+        version: 1.58.0
+    devDependencies:
+      typescript:
+        specifier: ^5.3.3
+        version: 5.9.3
+
   packages/core:
     dependencies:
       pino:
@@ -593,6 +640,10 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -1798,6 +1849,8 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  commander@11.1.0: {}
 
   concat-map@0.0.1: {}
 
