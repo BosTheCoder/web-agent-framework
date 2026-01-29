@@ -8,7 +8,8 @@
     "test": "vitest",
     "test:manual": "echo 'Run manual tests locally with real browser'",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "web-agent": "cd apps/cli && pnpm dev"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
